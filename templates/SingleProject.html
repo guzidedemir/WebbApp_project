@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+ {% extends 'base.html' %}
+{% block Display %}
+
+     {% load staticfiles %}
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'css/main.css'%}">
+<body>
+
+
+  <h1>Project Details</h1>
+
+  <div class="info">
+  
+	<div>
+		<p class="tag">Project Name :</p>
+		<p class="text"> {{ projectname.Name }} </p>
+	</div>
+	  
+	<div>
+		<p class="tag">Budjet :</p>
+		<p class="text">{{ projectname.Budget }}</p>
+	</div>
+	  
+	  <br>
+{% for workers in projectworkers %}
+	<div>
+
+		<ul>
+
+            <p class="tag">Worker List :</p>
+			<a href="/Lab/People/{{ workers.FirstName}}_{{workers.LastName}}/" class="text">{{ workers.FirstName}} {{ workers.LastName}}</a>
+
+		</ul>
+
+	</div>
+
+{% endfor %}
+    </div>
+
+</body>
+
+{% endblock %}
+</html>
+			

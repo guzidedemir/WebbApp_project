@@ -1,0 +1,56 @@
+html{
+	
+	background: linear-gradient(lightblue, white);
+	background-repeat: no-repeat;
+	
+}
+
+h1{
+	
+	margin: 40px 50px 0px 50px;
+	text-align: center;
+	width: 300px;
+	
+}
+
+ul.a {
+	list-style: none outside none;
+	margin:0;
+	padding: 0;
+	text-align: center;
+	background-color: #C7C6C6;
+}
+
+ul.a li {
+	float: left;
+}
+   
+.info{
+	 
+	background: #f9f9f9;
+	float: left;
+	width: 300px;
+	border: 5px solid grey;
+	padding: 55px;
+	margin: 50px;
+	border-radius: 15px;
+	 
+}
+ 
+.text, .tag{
+	
+	display: inline;
+	padding: 10px;
+	
+}
+
+.tag{
+	
+	font-weight: bold;
+	
+}
+
+.link:link{color: green;}
+.link:visited{color: green;}
+.link:hover{color: lightgreen;}
+.link:active{color: chartreuse;}

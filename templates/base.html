@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+
+     {% load staticfiles %}
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="{% static 'css/main.css'%}">
+
+
+    <style>
+
+    ul.a {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #dddddd;
+    }
+
+    li.c {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      padding: 10px;
+    }
+    </style>
+
+
+        <ul class="a">
+          <li class="c"><a href="/Lab">Home</a></li>
+          <li class="c"><a href="/Lab/Project">Project</a></li>
+          <li class="c"><a href="/Lab/People">People</a></li>
+          <li class="c"><a href="/Lab/Blogs">Blogs</a></li>
+        </ul>
+
+    <body>
+    {% block Display %}
+
+    {% endblock %}
+    </body>
+
+</html>

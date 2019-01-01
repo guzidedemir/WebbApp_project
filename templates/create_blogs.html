@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ {% extends 'base.html' %}
+{% block Display %}
+
+     {% load staticfiles %}
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'css/main.css'%}">
+<body>
+
+<form action="/Lab/Blogs/" method="post">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <label> Title </label>
+            <input type="text" name="inputname">
+        </tr>
+        <tr>
+            <label> Body </label>
+            <input type="text" name="comments" style= "height:100px;font-size:14pt">
+
+        </tr>
+        <tr>
+            <input type="submit">
+        </tr>
+    </table>
+</form>
+</body>
+{% endblock %}
+</html>

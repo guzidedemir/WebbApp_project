@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ {% extends 'Base.html' %}
+{% block Display %}
+
+     {% load staticfiles %}
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'css/main.css'%}">
+<body>
+
+<h1>Project Details</h1>
+    {% for i in projects %}
+
+    <div class="info">
+
+	    <div>
+            <p class="tag">Project Name :</p>
+            <a href="/Lab/Project/{{ i.Name}}/" class="text">{{ i.Name }}</a>
+        </div>
+
+        <div>
+            <p class="tag">Budget :</p>
+            <p class="text"> {{ i.Budget }}</p>
+	    </div>
+    </div>
+
+</body>
+{% endfor %}
+{% endblock %}
+
+</html>

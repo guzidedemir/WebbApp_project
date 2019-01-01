@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block Display %}
+
+     {% load staticfiles %}
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'css/main.css'%}">
+<body>
+<h2>The Button Element</h2>
+<button type="button" onclick="location.href='Create/'"> Create New</button>
+</body>
+{% endblock %}
+</html>
