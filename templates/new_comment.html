@@ -1,7 +1,7 @@
 <html lang="en">
-<form method="post">
+<form role = "form" action="" method="post">
     {% csrf_token %}
-    {{ inputform }}
+    {{ form.as_p }}
     <input type="submit">
 </form>
 </html>
